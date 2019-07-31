@@ -11,7 +11,8 @@
   "scripts": {
     "build": "rollup -c",
     "build-uglify": "rollup -c && uglifyjs build/clmtrackr.js -c > build/clmtrackr.min.js",
-    "clean": "rm -rf build"
+    "clean": "rm -rf build",
+    "http-server": "http-server"
   },
   "author": {
     "name": "Audun Mathias Øygard",
@@ -30,8 +31,10 @@
     "uglify-es": "^3.0.17"
   },
   "dependencies": {
+    "http-server": "^0.11.1",
     "jsfeat": "git+https://github.com/inspirit/jsfeat",
     "numeric": "^1.2.6",
+    "pixi.js": "^5.1.0",
     "mosse": "^0.1.1",
     "raf": "^3.3.2",
     "promise-polyfill": "^6.0.2"
